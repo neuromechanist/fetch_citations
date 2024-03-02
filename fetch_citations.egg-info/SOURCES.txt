@@ -1,0 +1,10 @@
+README.md
+setup.py
+fetch_citations/__init__.py
+fetch_citations/fetch_citations.py
+fetch_citations/version.py
+fetch_citations.egg-info/PKG-INFO
+fetch_citations.egg-info/SOURCES.txt
+fetch_citations.egg-info/dependency_links.txt
+fetch_citations.egg-info/requires.txt
+fetch_citations.egg-info/top_level.txt

@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: fetch-citations
+Version: 0.1.dev0
+Summary: fetch_citations: a simple interface to Google Scholar to fetch citation numbers and lists.
+Home-page: http://github.com/neuromechanist/fetch_citations
+Download-URL: 
+Author: Seyed Yahya Shirazi
+Author-email: shirazi@ieee.org
+Maintainer: Seyed Yahya Shirazi
+Maintainer-email: shirazi@ieee.org
+License: MIT
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires: pandas
+Requires: scholarly
+Requires-Python: >= 3.9
+
+
+
+fetch_citations
+===============
+fetch_citations is a simple interface to Google Scholar to fetch citation numbers and lists.
+
+It is part of the NEMAR project, and is designed to be used in conjunction with the NEMAR database.
+However, it can be used independently of the NEMAR project, with any list of queries for which you would like
+to fetch citation numbers and lists.
+
+It uses the `scholarly` package to interact with the Google Scholar API.
+It also uses the `pandas` package to create and manipulate dataframes. You can install these packages using pip:
+
+    ``` bash
+    pip install scholarly pandas
+    ```
+For the best results, you should also initialize the proxy using the `get_working_proxy` function.
+This function requires a paid API key. You can get a key from ScrapreAPI, and then use it to initialize the proxy.
+
+The `get_citation_numbers` function retrieves the total number of citations for a given dataset.
+The `get_citations` function retrieves the detailed citation information for a given dataset.
+
+(c) 2024, Seyed Yahya Shirazi, Swartz Center for Computational Neuroscience, University of California, San Diego
